@@ -1,0 +1,45 @@
+.opportunities {
+  display: flex;
+  @extend %section;
+}
+
+.hidden {
+  @extend %visually-hidden;
+}
+
+.opportunities__item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.opportunities__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: $primary-light-color-button;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.opportunities__title {
+  margin-bottom: 10px;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.opportunities__text {
+  color: $primary-text-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
