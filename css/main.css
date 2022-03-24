@@ -75,6 +75,7 @@ p {
 }
 
 .container__header {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,10 +88,33 @@ p {
   color: #2196f3;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.1666666667;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logo--header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo--header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .logo__dark {
@@ -101,20 +125,30 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-
-.navigation__list {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 93px;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+@media screen and (max-width: 767px) {
+  .navigation__list {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navigation__list {
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation__list {
+    margin-left: 93px;
+  }
 }
 
 .navigation__item {
@@ -123,8 +157,18 @@ p {
 .navigation__item:first-child {
   margin-left: 0;
 }
+@media screen and (max-width: 1199px) {
+  .navigation__item + .navigation__item {
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation__item + .navigation__item {
+    margin-left: 30px;
+  }
+}
 
-.navigation__list .navigation__link {
+.navigation__link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -138,21 +182,41 @@ p {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.navigation__list .navigation__link:last-child {
+.navigation__link:last-child {
   margin-right: 0;
 }
-
-.navigation__list .navigation__link:hover,
-.navigation__list .navigation__link:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: #2196f3;
 }
 
 .auto-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .auto-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auto-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .auto-nav__item + .auto-nav__item {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auto-nav__item + .auto-nav__item {
+    margin-left: 30px;
+  }
 }
 
 .auto-nav__link {
@@ -164,8 +228,8 @@ p {
           align-items: center;
   color: #757575;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   text-decoration: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -174,14 +238,28 @@ p {
 .auto-nav .auto-nav__link:hover, .auto-nav .auto-nav__link:focus {
   color: #2196f3;
 }
+@media screen and (min-width: 1200px) {
+  .auto-nav__link {
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
+}
 
 .auto-nav__icon {
-  margin-right: 10px;
   fill: currentColor;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+@media screen and (max-width: 1199px) {
+  .auto-nav__icon {
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auto-nav__icon {
+    margin-right: 10px;
+  }
+}
 .auto-nav__icon:hover {
   fill: #2196f3;
 }
@@ -291,8 +369,7 @@ p {
 }
 
 .section--no-padding--top {
-  margin-bottom: 93px;
-  margin-top: 0;
+  padding-top: 0;
 }
 
 .section__title {
