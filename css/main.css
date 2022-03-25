@@ -68,6 +68,21 @@ p {
   margin-right: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 .header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -90,18 +105,8 @@ p {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-decoration: none;
-}
-@media screen and (max-width: 1199px) {
-  .logo {
-    font-size: 24px;
-    line-height: 1.1666666667;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .logo {
-    font-size: 26px;
-    line-height: 1.2;
-  }
+  font-size: 26px;
+  line-height: 1.1923076923;
 }
 
 @media screen and (max-width: 767px) {
