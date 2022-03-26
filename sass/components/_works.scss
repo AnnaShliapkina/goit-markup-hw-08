@@ -1,18 +1,36 @@
 .section--no-padding--top {
-  padding-top: 0;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.container--works {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .section__title {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 50px;
   color: $title-text-color;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    font-size: 28px;
+    line-height: calc(33 / 28);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+  }
+}
+.section__title--works {
+  margin-bottom: 50px;
 }
 
 .works {

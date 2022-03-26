@@ -1,27 +1,55 @@
 .section--grey-color {
-  @extend %section;
   background-color: $primary-light-color-button;
+  @media screen and (max-width: 1200px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1201px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .community__item {
-  background-color: $primary-white-color;
-  margin-left: 30px;
-  width: 270;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 0px 0px 4px 4px;
-
+  margin-top: 30px;
   &:first-child {
     margin-left: 0;
   }
 }
 
 .community {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &__item {
+      flex-basis: calc((100% - 1 * 30px) / 2);
+    }
+    &__item:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__item {
+      flex-basis: calc((100% - 3 * 30px) / 4);
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.community__image {
+  width: 100%;
 }
 
 .community__container {
   padding-top: 30px;
   padding-bottom: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 4px 4px;
+  background-color: $primary-white-color;
 }
 
 .community__title {

@@ -63,71 +63,73 @@
   }
 }
 
-.container--subscribe {
-  display: flex;
-}
+// .container--subscribe {
+//   display: flex;
+// }
 
-.form__subscribe input {
-  display: flex;
-  flex-direction: column;
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: $primary-bar-color;
+// .form__subscribe input {
+//   display: flex;
+//   flex-direction: column;
+//   width: 358px;
+//   height: 50px;
+//   border: 1px solid rgba(255, 255, 255, 0.3);
+//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//   border-radius: 4px;
+//   background-color: $primary-bar-color;
 
-  margin-right: 20px;
+//   margin-right: 20px;
 
-  color: $primary-white-color-60;
-  padding-left: 16px;
-}
+//   color: $primary-white-color-60;
+//   padding-left: 16px;
+// }
 
-.form__subscribe input::placeholder {
-  padding-left: 16px;
+// .form__subscribe input::placeholder {
+//   padding-left: 16px;
 
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   letter-spacing: 0.03em;
 
-  color: $primary-white-color-60;
-}
+//   color: $primary-white-color-60;
+// }
 
-.subscribe-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+// .subscribe-btn {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
 
-  background-color: $hover-button-color;
-  color: $primary-white-color;
-  border: transparent;
+//   background-color: $hover-button-color;
+//   color: $primary-white-color;
+//   border: transparent;
 
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   border-radius: 4px;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  min-width: 200px;
-  height: 50px;
+//   min-width: 200px;
+//   height: 50px;
 
-  cursor: pointer;
+//   cursor: pointer;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-}
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.87;
+//   letter-spacing: 0.06em;
+// }
 
-.button-input {
-  display: flex;
-  align-items: end;
-  margin-top: 20px;
-}
+// .button-input {
+//   @media screen and (min-width:1200px) {
 
-.icon-send {
-  margin-left: 10px;
-  fill: currentColor;
-}
+//   display: flex;
+//   align-items: end;
+//   margin-top: 20px;}
+// }
+
+// .icon-send {
+//   margin-left: 10px;
+//   fill: currentColor;
+// }
 
 .form {
   display: flex;
