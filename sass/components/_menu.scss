@@ -5,6 +5,7 @@
   top: 0;
   transform: translateY(25%);
   padding: 0;
+
   margin-left: auto;
   background-color: transparent;
   border: none;
@@ -36,7 +37,7 @@
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   display: none;
   z-index: 2;
   top: 0;
