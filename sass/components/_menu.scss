@@ -11,6 +11,16 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+
+  // @media screen and (max-width: 480px) {
+  //   position: fixed;
+  //   padding: 30px 25px;
+  // }
+
+  // @media screen and (min-width: 480px) and (max-width: 767px) {
+  //   position: fixed;
+  //   padding: 48px 40px;
+  // }
 }
 
 .icon-cross {
@@ -26,7 +36,7 @@
 }
 
 .mobile-menu {
-  position: fixed;
+  position: absolute;
   display: none;
   z-index: 2;
   top: 0;
