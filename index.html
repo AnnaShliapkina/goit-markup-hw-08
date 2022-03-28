@@ -46,56 +46,131 @@
       </ul>
 
 
+
+      <!-- mb -->
+      <button class="button-menu-mb is-open" data-menu-button type="button" aria-expanded="false"
+        aria-controls="mobile-menu">
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon-menu" href="./images/symbol-defs.svg#icon-cross"></use>
+          <use class="icon-cross" href="./images/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu" id="mobile-menu" data-menu>
+        <ul class="mb-site-nav">
+          <li class="mb-site-nav__item">
+            <a class="mb-site-nav__link current" href="./index.html">Студия</a>
+          </li>
+          <li class="mb-site-nav__item">
+            <a href="./portfolio.html" class="mb-site-nav__link">Портфолио</a>
+          </li>
+          <li class="mb-site-nav__item">
+            <a href="" class="mb-site-nav__link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="mb-contact-list">
+          <li class="mb-contact-list__item">
+            <a href="tel:+380961111111" class="mb-contact-list__tel">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="mb-contact-list__item">
+            <a href="mailto:info@devstudio.com" class="mb-contact-list__mail">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mb-social-list">
+          <li class="mb-social-list__item">
+            <a class="mb-social-list__link" href="https://www.instagram.com/">Instagram</a>
+          </li>
+          <li class="mb-social-list__item">
+            <a class="mb-social-list__link" href="https://twitter.com/?lang=ru">Twitter</a>
+          </li>
+          <li class="mb-social-list__item">
+            <a class="mb-social-list__link" href="https://www.facebook.com/">Facebook</a>
+          </li>
+          <li class="mb-social-list__item">
+            <a class="mb-social-list__link" href="https://www.linkedin.com/">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+      <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+          <button data-modal-close type="button" class="modal__button">
+            <svg class="modal__vector" width="11" height="11">
+              <use href="./images/symbol-defs.svg#icon-Vector"></use>
+            </svg>
+          </button>
+
+          <form class="form">
+            <p class="form__text">Оставьте свои данные, мы перезвоним</p>
+            <ul class="form__list">
+
+              <li class="form__item">
+                <label class="form__label">Имя
+                  <span class="form__box">
+                    <input class="form__input" type="text" name="name">
+                    <svg class="form__icon" width="12" height="12">
+                      <use href="./images/icons.svg#icon-name-form"></use>
+                    </svg>
+                  </span>
+                </label>
+              </li>
+
+              <li class="form__item">
+                <label class="form__label">Телефон
+                  <span class="form__box">
+                    <input class="form__input" type="text" name="tel">
+                    <svg class="form__icon" width="12" height="12">
+                      <use href="./images/icons.svg#icon-phone-form"></use>
+                    </svg>
+                  </span>
+                </label>
+              </li>
+
+              <li class="form__item">
+                <label class="form__label">Почта
+                  <span class="form__box">
+                    <input class="form__input" type="text" name="mail">
+                    <svg class="form__icon" width="12" height="12">
+                      <use href="./images/icons.svg#icon-mail-form"></use>
+                    </svg>
+                  </span>
+                </label>
+              </li>
+            </ul>
+
+            <div class="form__comment">
+              <label class="form__label" for="comment">Комментарий</label>
+              <textarea class="form__textarea" name="comment" id="comment" placeholder="Введите текст"></textarea>
+            </div>
+
+            <div class="checkbox">
+              <label class="checkbox__label">
+
+                <input class="checkbox__input visually-hidden" type="checkbox" name="policy">
+                <svg class="checkbox__icon--checked" width="16" height="15">
+                  <use href="./images/icons.svg#icon-checked"></use>
+                </svg>
+                <!-- <span class="icon"></span> -->
+                <span class="checkbox__policy">Соглашаюсь на рассылку и принимаю<a class="checkbox__agreement"
+                    href="">Условия
+                    договора</a></span>
+
+              </label>
+
+            </div>
+            <button class="btn-form" type="submit">Отправить</button>
+
+
+
+          </form>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- mb -->
-  <button class="button-menu-mb is-open" data-menu-button type="button" aria-expanded="false"
-    aria-controls="mobile-menu">
-    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-      <use class="icon-menu" href="./images/symbol-defs.svg#icon-cross"></use>
-      <use class="icon-cross" href="./images/symbol-defs.svg#icon-menu"></use>
-    </svg>
-  </button>
-  <div class="mobile-menu" id="mobile-menu" data-menu>
-    <ul class="mb-site-nav">
-      <li class="mb-site-nav__item">
-        <a class="mb-site-nav__link current" href="./index.html">Студия</a>
-      </li>
-      <li class="mb-site-nav__item">
-        <a href="./portfolio.html" class="mb-site-nav__link">Портфолио</a>
-      </li>
-      <li class="mb-site-nav__item">
-        <a href="" class="mb-site-nav__link">Контакты</a>
-      </li>
-    </ul>
-    <ul class="mb-contact-list">
-      <li class="mb-contact-list__item">
-        <a href="tel:+380961111111" class="mb-contact-list__tel">
-          +38 096 111 11 11
-        </a>
-      </li>
-      <li class="mb-contact-list__item">
-        <a href="mailto:info@devstudio.com" class="mb-contact-list__mail">
-          info@devstudio.com
-        </a>
-      </li>
-    </ul>
-    <ul class="mb-social-list">
-      <li class="mb-social-list__item">
-        <a class="mb-social-list__link" href="https://www.instagram.com/">Instagram</a>
-      </li>
-      <li class="mb-social-list__item">
-        <a class="mb-social-list__link" href="https://twitter.com/?lang=ru">Twitter</a>
-      </li>
-      <li class="mb-social-list__item">
-        <a class="mb-social-list__link" href="https://www.facebook.com/">Facebook</a>
-      </li>
-      <li class="mb-social-list__item">
-        <a class="mb-social-list__link" href="https://www.linkedin.com/">LinkedIn</a>
-      </li>
-    </ul>
-  </div>
+
   <main>
     <section class="bar overlay">
       <div class="container hero-container">
@@ -103,15 +178,7 @@
           эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <picture>
-          <source srcset="./images/desctop/header@1x.jpg 1x,./images/desctop/header@2x.jpg 2x"
-            media="(min-width: 1200px)" />
-          <source srcset="./images/tablet/header@1x.jpg 1x, ./images/tablet/header@2x.jpg 2x"
-            media="(min-width: 768px)" />
-          <source srcset="./images/mobile/header@1x.jpg 1x,./images/mobile/header@2x.jpg 2x
-                                                                                  " media="(min-width: 480px)" />
-          <img src="./images/background-image.jpg" alt="люди общаются">
-        </picture>
+
         <button data-modal-open type="button" class="bar__button">Заказать услугу</button>
       </div>
 

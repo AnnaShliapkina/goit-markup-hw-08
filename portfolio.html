@@ -41,56 +41,57 @@
             </svg>+38096 111 11 11 </a>
         </li>
       </ul>
+      <!-- mb -->
+      <button class="button-menu-mb is-open" data-menu-button type="button" aria-expanded="false"
+        aria-controls="mobile-menu">
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon-menu" href="./images/symbol-defs.svg#icon-cross"></use>
+          <use class="icon-cross" href="./images/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu" id="mobile-menu" data-menu>
+        <ul class="mb-site-nav">
+          <li class="mb-site-nav__item">
+            <a class="mb-site-nav__link " href="./index.html">Студия</a>
+          </li>
+          <li class="mb-site-nav__item">
+            <a href="./portfolio.html" class="mb-site-nav__link current">Портфолио</a>
+          </li>
+          <li class="mb-site-nav__item">
+            <a href="" class="mb-site-nav__link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="mb-contact-list">
+          <li class="mb-contact-list__item">
+            <a href="tel:+380961111111" class="mb-contact-list__tel">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="mb-contact-list__item">
+            <a href="mailto:info@devstudio.com" class="mb-contact-list__mail">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mb-social-list">
+          <li class="mb-social-list__item">
+            <a class="mb-social-list__link" href="https://www.instagram.com/">Instagram</a>
+          </li>
+          <li class="mb-social-list__item">
+            <a class="mb-social-list__link" href="https://twitter.com/?lang=ru">Twitter</a>
+          </li>
+          <li class="mb-social-list__item">
+            <a class="mb-social-list__link" href="https://www.facebook.com/">Facebook</a>
+          </li>
+          <li class="mb-social-list__item">
+            <a class="mb-social-list__link" href="https://www.linkedin.com/">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 
-  <!-- mb -->
-  <button class="button-menu-mb is-open" data-menu-button type="button" aria-expanded="false"
-    aria-controls="mobile-menu">
-    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-      <use class="icon-menu" href="./images/symbol-defs.svg#icon-cross"></use>
-      <use class="icon-cross" href="./images/symbol-defs.svg#icon-menu"></use>
-    </svg>
-  </button>
-  <div class="mobile-menu" id="mobile-menu" data-menu>
-    <ul class="mb-site-nav">
-      <li class="mb-site-nav__item">
-        <a class="mb-site-nav__link " href="./index.html">Студия</a>
-      </li>
-      <li class="mb-site-nav__item">
-        <a href="./portfolio.html" class="mb-site-nav__link current">Портфолио</a>
-      </li>
-      <li class="mb-site-nav__item">
-        <a href="" class="mb-site-nav__link">Контакты</a>
-      </li>
-    </ul>
-    <ul class="mb-contact-list">
-      <li class="mb-contact-list__item">
-        <a href="tel:+380961111111" class="mb-contact-list__tel">
-          +38 096 111 11 11
-        </a>
-      </li>
-      <li class="mb-contact-list__item">
-        <a href="mailto:info@devstudio.com" class="mb-contact-list__mail">
-          info@devstudio.com
-        </a>
-      </li>
-    </ul>
-    <ul class="mb-social-list">
-      <li class="mb-social-list__item">
-        <a class="mb-social-list__link" href="https://www.instagram.com/">Instagram</a>
-      </li>
-      <li class="mb-social-list__item">
-        <a class="mb-social-list__link" href="https://twitter.com/?lang=ru">Twitter</a>
-      </li>
-      <li class="mb-social-list__item">
-        <a class="mb-social-list__link" href="https://www.facebook.com/">Facebook</a>
-      </li>
-      <li class="mb-social-list__item">
-        <a class="mb-social-list__link" href="https://www.linkedin.com/">LinkedIn</a>
-      </li>
-    </ul>
-  </div>
+
 
 
   <main>
@@ -136,7 +137,7 @@
                   <source srcset="./images/tablet/design2@1x.jpg 1x, ./images/tablet/design2@2x.jpg 2x"
                     media="(min-width: 768px)" />
                   <source srcset="./images/mobile/design2@1x.jpg 1x,./images/mobile/design2@2x.jpg 2x
-                                                " media="(min-width: 480px)" />
+                                                " media="(max-width: 767px)" />
                   <img class="img" src="images/design2.png" alt="Постер New Orlean vs Golden Star" />
                 </picture>
                 <p class="samples__text">Технокряк это современная площадка распространения коронавируса. Компании
@@ -160,7 +161,7 @@
                   <source srcset="./images/tablet/application3@1x.jpg 1x, ./images/tablet/application3@2x.jpg 2x"
                     media="(min-width: 768px)" />
                   <source srcset="./images/mobile/application3@1x.jpg 1x,./images/mobile/application3@2x.jpg 2x
-                                  " media="(min-width: 480px)" />
+                                  " media="(max-width: 767px)" />
                   <img class="img" src="images/application3.png"
                     alt="Форель на фоне логотипа ресторана морской кухни" />
                 </picture>
@@ -183,7 +184,7 @@
                   <source srcset="./images/tablet/marketing4@1x.jpg 1x, ./images/tablet/marketing4@2x.jpg 2x"
                     media="(min-width: 768px)" />
                   <source srcset="./images/mobile/marketing4@1x.jpg 1x ,./images/mobile/marketing4@2x.jpg 2x
-                                                  " media="(min-width: 480px)" />
+                                                  " media="(max-width: 767px)" />
                   <img class="img" src="images/marketing4.png" alt="Наушники с амбюшюрами" />
                 </picture>
                 <p class="samples__text">Технокряк это современная площадка распространения коронавируса. Компании
@@ -205,7 +206,7 @@
                   <source srcset="./images/tablet/application5@1x.jpg 1x, ./images/tablet/application5@2x.jpg 2x"
                     media="(min-width: 768px)" />
                   <source srcset="./images/mobile/application5@1x.jpg 1x,./images/mobile/application5@2x.jpg 2x
-                                                                  " media="(min-width: 480px)" />
+                                                                  " media="(max-width: 767px)" />
                   <img class="img" src="images/application5.png" alt="Две коробки" />
                 </picture>
                 <p class="samples__text">Технокряк это современная площадка распространения коронавируса. Компании
@@ -227,7 +228,7 @@
                   <source srcset="./images/tablet/web-site6@1x.jpg 1x, ./images/tablet/web-site6@2x.jpg 2x"
                     media="(min-width: 768px)" />
                   <source srcset="./images/mobile/web-site6@1x.jpg 1x,./images/mobile/web-site6@2x.jpg 2x
-                                                                                  " media="(min-width: 480px)" />
+                                                                                  " media="(max-width: 767px)" />
                   <img class="img" src="images/web-site6.png" alt="Монитор с изображением" />
                 </picture>
                 <p class="samples__text">Технокряк это современная площадка распространения коронавируса. Компании
@@ -249,7 +250,7 @@
                   <source srcset="./images/tablet/design7@1x.jpg 1x, ./images/tablet/design7@2x.jpg 2x"
                     media="(min-width: 768px)" />
                   <source srcset="./images/mobile/design7@1x.jpg 1x,./images/mobile/design7@2x.jpg 2x
-                                                                                  " media="(min-width: 480px)" />
+                                                                                  " media="(max-width: 767px)" />
                   <img class="img" src="images/desighn7.png" alt="Журнал со статьей с названием I am limited edition" />
                 </picture>
                 <p class="samples__text">Технокряк это современная площадка распространения коронавируса. Компании
@@ -272,7 +273,7 @@
                     media="(min-width: 768px)" />
                   <source srcset="./images/mobile/marketing8@1x.jpg 1x,./images/mobile/marketing8@2x.jpg 2x
                                                                                                   "
-                    media="(min-width: 480px)" />
+                    media="(max-width: 767px)" />
                   <img class="img" src="images/marketing8.png" alt="Бирка с надписью Label tag>" />
                 </picture>
                 <p class="samples__text">Технокряк это современная площадка распространения коронавируса. Компании
@@ -295,7 +296,7 @@
                     media="(min-width: 768px)" />
                   <source srcset="./images/mobile/application9@1x.jpg 1x,./images/mobile/application9@2x.jpg 2x
                                                                                                                   "
-                    media="(min-width: 480px)" />
+                    media="(max-width: 767px)" />
                   <img class="img" src="images/application9.png"
                     alt="Ноутбук с открытой веб-страницей Growing Business" />
                 </picture>

@@ -2,6 +2,10 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
+  padding: 10px 0;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .container__header {
