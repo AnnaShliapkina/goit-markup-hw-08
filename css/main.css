@@ -318,7 +318,7 @@ p {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   display: none;
   z-index: 2;
   top: 0;
