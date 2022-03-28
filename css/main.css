@@ -1267,7 +1267,7 @@ p {
 @media screen and (max-width: 767px) {
   .modal {
     position: absolute;
-    width: calc(100% - 15px);
+    width: calc(100% - 30px);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1278,6 +1278,7 @@ p {
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
     width: 450px;
+    height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
