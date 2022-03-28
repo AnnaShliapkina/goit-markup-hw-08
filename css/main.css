@@ -458,7 +458,6 @@ p {
 .overlay {
   margin-left: auto;
   margin-right: auto;
-  max-width: 767px;
   height: 400px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/header@1x.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header@1x.jpg);
@@ -474,7 +473,6 @@ p {
 }
 @media screen and (min-width: 768px) {
   .overlay {
-    min-width: 1199px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/header@1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/header@1x.jpg);
   }
@@ -487,7 +485,6 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .overlay {
-    min-width: 1600px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desctop/header@1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctop/header@1x.jpg);
@@ -719,17 +716,6 @@ p {
 
 .section--grey-color {
   background-color: #f5f4fa;
-}
-@media screen and (max-width: 1200px) {
-  .section--grey-color {
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 1201px) {
-  .section--grey-color {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .community__item {
