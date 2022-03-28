@@ -37,12 +37,9 @@
   border-radius: 4px;
 
   opacity: 1;
-
   @media screen and (max-width: 767px) {
-    position: relative;
-    min-width: 450px;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    width: calc(100% - 15px);
   }
 
   @media screen and (min-width: 768px) {
@@ -52,12 +49,10 @@
     transform: translate(-50%, -50%) scale(1);
 
     width: 450px;
-    height: 609px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 528px;
-    height: 581px;
+    min-width: 528px;
   }
 }
 
