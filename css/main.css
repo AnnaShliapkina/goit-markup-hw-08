@@ -719,10 +719,6 @@ p {
   background-color: #f5f4fa;
 }
 
-.community__item:first-child {
-  margin-left: 0;
-}
-
 @media screen and (min-width: 768px) {
   .community {
     display: -webkit-box;
@@ -747,17 +743,15 @@ p {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: 767px) {
-  .community__item + .community__item {
-    margin-top: 30px;
-  }
+.community__item + .community__item {
+  margin-top: 30px;
 }
-@media screen and (min-width: 1200px) {
-  .community__item {
+@media screen and (min-width: 767px) {
+  .community__item + .community__item {
     margin-top: 0;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 767px) {
   .community__item {
     width: calc(50% - 15px);
   }
@@ -765,12 +759,12 @@ p {
 
 .community__image {
   width: 100%;
+  max-width: 100%;
 }
 
 .community__container {
   padding-top: 30px;
   padding-bottom: 30px;
-  border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
 

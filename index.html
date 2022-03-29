@@ -349,8 +349,21 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="community">
           <li class="community__item">
-            <img srcset="./images/ihor@1x.jpg 1x,./images/ihor@2x.jpg 2x " src="images/img.jpg"
-              alt="фото Игоря Демьяненко" width="270" class="community__image" />
+            <picture>
+              <source srcset="
+                                ./images/desctop/ihor@1x.jpg 1x,
+                                ./images/desctop/ihor@2x.jpg 2x
+                              " media="(min-width: 1200px)" />
+              <source srcset="
+                                ./images/tablet/img (7)-min.jpg 1x,
+                                ./images/tablet/img (8)-min.jpg 2x
+                              " media="(min-width: 768px)" />
+              <source srcset="
+                                ./images/mobile/img (15)-min.jpg 1x,
+                                ./images/mobile/img (16)-min.jpg 2x
+                              " media="(max-width: 767px)" />
+              <img src="images/img.jpg" alt="фото Игоря Демьяненко" class="community__image" />
+            </picture>
             <div class="community__container">
               <h3 class="community__title">Игорь Демьяненко</h3>
               <p lang="en" class="community__text">Product Desiner</p>
@@ -389,8 +402,21 @@
             </div>
           </li>
           <li class="community__item">
-            <img srcset="./images/olha@1x.jpg 1x, ./images/olha@2x.jpg 2x" src="images/img(1).jpg"
-              alt="фото Ольги Репиной" width="270" class="community__image" />
+            <picture>
+              <source srcset="
+                                            ./images/desctop/olha@1x,jpg 1x,
+                                            ./images/desctop/olha@2x.jpg 2x
+                                          " media="(min-width: 1200px)" />
+              <source srcset="
+                                            ./images/tablet/img (9)-min.jpg  1x,
+                                            ./images/tablet/img (10)-min.jpg 2x
+                                          " media="(min-width: 768px)" />
+              <source srcset="
+                                            ./images/mobile/img (17)-min.jpg 1x,
+                                            ./images/mobile/img (18)-min.jpg 2x
+                                          " media="((max-width: 767px)" />
+              <img src="images/img(1).jpg" alt="фото Ольги Репиной" class="community__image" />
+            </picture>
             <div class="community__container">
               <h3 class="community__title">Ольга Репина</h3>
               <p lang="en" class="community__text">Frontend Developer</p>
@@ -429,8 +455,21 @@
             </div>
           </li>
           <li class="community__item">
-            <img srcset="./images/nikolay@1x.jpg 1x, ./images/nikolay@2x.jpg 2x" src="images/img(2).jpg"
-              alt="фото Николая Тарасова" width="270" class="community__image" />
+            <picture>
+              <source srcset="
+                                                        ./images/desctop/nikolay@1x.jpg 1x,
+                                                        ./images/desctop/nikolay@2x.jpg 2x
+                                                      " media="(min-width: 1200px)" />
+              <source srcset="
+                                                        ./images/tablet/img (11)-min.jpg 1x,
+                                                        ./images/tablet/img (12)-min.jpg 2x
+                                                      " media="(min-width: 768px)" />
+              <source srcset="
+                                                        ./images/mobile/img (19)-min.jpg 1x,
+                                                        ./images/mobile/img (20)-min.jpg 2x
+                                                      " media="((max-width: 767px)" />
+              <img src="images/img(2).jpg" alt="фото Николая Тарасова" class="community__image" />
+            </picture>
             <div class="community__container">
               <h3 class="community__title">Николай Тарасов</h3>
               <p lang="en" class="community__text">Marketing</p>
@@ -469,8 +508,21 @@
             </div>
           </li>
           <li class="community__item">
-            <img srcset="./images/mickael@1x.jpg 1x, ./images/mickael@2x.jpg 2x" src="images/img(3).jpg"
-              alt="фото Михаила Ермакова" width="270" class="community__image" />
+            <picture>
+              <source srcset="
+                                                                    ./images/desctop/mickael@1x.jpg 1x,
+                                                                    ./images/desctop/mickael@2x.jpg 2x
+                                                                  " media="(min-width: 1200px)" />
+              <source srcset="
+                                                                    ./images/tablet/img (13)-min.jpg 1x,
+                                                                    ./images/tablet/img (14)-min.jpg 2x
+                                                                  " media="(min-width: 768px)" />
+              <source srcset="
+                                                                    ./images/mobile/img (21)-min.jpg 1x,
+                                                                    ./images/mobile/img (22)-min.jpg 2x
+                                                                  " media="((max-width: 767px)" />
+              <img src="images/img(3).jpg" alt="фото Михаила Ермакова" class="community__image" />
+            </picture>
             <div class="community__container">
               <h3 class="community__title">Михаил Ермаков</h3>
               <p lang="en" class="community__text">UI Designer</p>
