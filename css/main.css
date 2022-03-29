@@ -394,7 +394,7 @@ p {
 .mb-contact-list__tel {
   font-weight: 500;
   font-size: 34px;
-  line-height: 0.2941176471;
+  line-height: 1.1764705882;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
@@ -402,7 +402,7 @@ p {
 .mb-contact-list__mail {
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: #757575;
 }
