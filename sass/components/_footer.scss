@@ -138,6 +138,7 @@
 
 .form__subscribe {
   display: block;
+  width: 100%;
 
   @media screen and (max-width: 767px) {
     max-width: 100%;
@@ -157,7 +158,7 @@
 
 .form__subscribe input {
   box-sizing: border-box;
-  width: 100%;
+
   height: 50px;
   padding: 15px 16px;
 

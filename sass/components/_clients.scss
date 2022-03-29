@@ -1,9 +1,5 @@
 .section--clients {
-  padding-bottom: 60px;
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+  @extend %section;
 }
 
 .clients {
@@ -44,11 +40,9 @@
   //   flex-basis: calc((100% - 1 * 30px) / 2);
   // }
   @media screen and (min-width: 768px) {
-    margin-top: 30px;
     flex-basis: calc((100% - 2 * 30px) / 3);
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 50px;
     flex-basis: calc((100% - 5 * 30px) / 6);
   }
 }
